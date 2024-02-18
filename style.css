@@ -1,4 +1,5 @@
-.title {
+.title-section,
+.input-section {
     display: flex;
     justify-content: center;
 }
