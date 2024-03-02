@@ -9,7 +9,12 @@ let seconds = today.getSeconds(39);
 submitBtn.addEventListener("click", function () {
   const inputValue = userInput.value;
   if (inputValue != NaN) {
-    let results = hours - inputValue;
-    alert("You are " + results + " Hours from " + hours);
+    if (inputValue < hours) {
+      let results = hours - inputValue;
+      alert("You are " + results + " Hours from " + hours);
+    } else if (inputValue > hours) {
+      let results = 24 - inputValue;
+      alert("You are " + results + " Hours from " + hours);
+    }
   }
 });
