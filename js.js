@@ -38,8 +38,7 @@ submitBtn.addEventListener("click", function () {
   }
 });
 
-function checkingIfClick() {
-  twentyFourHourtBtn.onclick = function () {
-    alert("Button Clicked");
-  };
+function ifClickedTwelveHourBtn(){
+  alert("You clicked the 12 hour button")
 }
+twelveHourBtn.addEventListener("click", ifClickedTwelveHourBtn);
