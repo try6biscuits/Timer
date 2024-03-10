@@ -2,13 +2,15 @@ const userInput = document.getElementById("userInput");
 const submitBtn = document.querySelector(".submitBtn");
 const twentyFourHourtBtn = document.querySelector(".twentyFourHourtBtn");
 const twelveHourBtn = document.querySelector(".twelveHourBtn");
+
 let today = new Date();
 let hours = today.getHours(21);
 let minutes = today.getMinutes(11);
 let seconds = today.getSeconds(39);
+let currentHour12 = hours % 12 || 12;
+
 
 function ifClickedTwelveHourBtn() {
-  alert("You clicked the 12 hour button");
 }
 twelveHourBtn.addEventListener("click", ifClickedTwelveHourBtn);
 
