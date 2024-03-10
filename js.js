@@ -42,3 +42,8 @@ function ifClickedTwelveHourBtn(){
   alert("You clicked the 12 hour button")
 }
 twelveHourBtn.addEventListener("click", ifClickedTwelveHourBtn);
+
+function ifClickedTwentyFourHourBtn() {
+  alert("You clicked the 24 hour button");
+}
+twentyFourHourtBtn.addEventListener("click", ifClickedTwentyFourHourBtn);
