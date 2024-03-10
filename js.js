@@ -8,13 +8,31 @@ let seconds = today.getSeconds(39);
 
 submitBtn.addEventListener("click", function () {
   const inputValue = userInput.value;
-  if (inputValue != NaN) {
-    if (inputValue < hours) {
-      let results = hours - inputValue;
-      alert("You are " + results + " Hours from " + hours);
+  if (isNaN(inputValue) || inputValue === undefined) {
+    alert("Enter a number");
+  } else {
+    if (inputValue == hours) {
+      alert("You are 0 Hours away from " + hours + " So therefor its " + hours);
+    } else if (inputValue < hours) {
+      let results = inputValue - hours + 24;
+      alert(
+        "You are " +
+          results +
+          " Hours from " +
+          inputValue +
+          " so therefor your time is " +
+          hours
+      );
     } else if (inputValue > hours) {
-      let results = 24 - inputValue;
-      alert("You are " + results + " Hours from " + hours);
+      let results = inputValue - hours;
+      alert(
+        "You are " +
+          results +
+          " Hours from " +
+          inputValue +
+          " so therefor your time is " +
+          hours
+      );
     }
   }
 });
