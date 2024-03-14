@@ -96,4 +96,7 @@ function btn24HourClicked() {
   btn24HourClicked = true
 }
 
+twelveHourBtn.addEventListener("click", checkBtn12HourClick);
 
+
+twentyFourHourtBtn.addEventListener("click", btn24HourClicked);
