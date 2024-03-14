@@ -88,3 +88,12 @@ function ifClickedTwentyFourHourBtn() {
 }
 twentyFourHourtBtn.addEventListener("click", ifClickedTwentyFourHourBtn);
 
+function checkBtn12HourClick () {
+  btn12HourClicked = true
+}
+
+function btn24HourClicked() {
+  btn24HourClicked = true
+}
+
+
