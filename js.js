@@ -10,42 +10,45 @@ let seconds = today.getSeconds(39);
 let currentHour12 = hours % 12 || 12;
 
 
+let = btn12HourClicked = false;
+let = btn24HourClicked = false;
+
 function ifClickedTwelveHourBtn() {
-   submitBtn.addEventListener("click", function () {
-     const inputValue = userInput.value;
-     if (isNaN(inputValue) || inputValue === undefined) {
-       alert("Enter a number");
-     } else {
-       if (inputValue == currentHour12) {
-         alert(
-           "You are 0 Hours away from " +
-             currentHour12 +
-             " So therefor its " +
-             currentHour12
-         );
-       } else if (inputValue < currentHour12) {
-         let results = inputValue - currentHour12 + 24;
-         alert(
-           "You are " +
-             results +
-             " Hours from " +
-             inputValue +
-             " so therefor your time is " +
-             currentHour12
-         );
-       } else if (inputValue > currentHour12) {
-         let results = inputValue - currentHour12;
-         alert(
-           "You are " +
-             results +
-             " Hours from " +
-             inputValue +
-             " so therefor your time is " +
-             currentHour12
-         );
-       }
-     }
-   });
+  submitBtn.addEventListener("click", function () {
+    const inputValue = userInput.value;
+    if (isNaN(inputValue) || inputValue === undefined) {
+      alert("Enter a number");
+    } else {
+      if (inputValue == currentHour12) {
+        alert(
+          "You are 0 Hours away from " +
+            currentHour12 +
+            " So therefor its " +
+            currentHour12
+        );
+      } else if (inputValue < currentHour12) {
+        let results = inputValue - currentHour12 + 24;
+        alert(
+          "You are " +
+            results +
+            " Hours from " +
+            inputValue +
+            " so therefor your time is " +
+            currentHour12
+        );
+      } else if (inputValue > currentHour12) {
+        let results = inputValue - currentHour12;
+        alert(
+          "You are " +
+            results +
+            " Hours from " +
+            inputValue +
+            " so therefor your time is " +
+            currentHour12
+        );
+      }
+    }
+  });
 }
 twelveHourBtn.addEventListener("click", ifClickedTwelveHourBtn);
 
@@ -84,3 +87,4 @@ function ifClickedTwentyFourHourBtn() {
   });
 }
 twentyFourHourtBtn.addEventListener("click", ifClickedTwentyFourHourBtn);
+
